@@ -9,6 +9,12 @@ import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.abb.visitisdc.fragments.tabs.FragmentTabCity;
+import com.abb.visitisdc.fragments.tabs.FragmentTabExplore;
+import com.abb.visitisdc.fragments.tabs.FragmentTabNavigate;
+import com.abb.visitisdc.fragments.tabs.FragmentTabOffice;
+import com.abb.visitisdc.fragments.tabs.FragmentTabSettings;
+
 public class MainActivity extends FragmentActivity {
 	private FragmentTabHost mTabHost;
 
@@ -36,19 +42,19 @@ public class MainActivity extends FragmentActivity {
 
 		mTabHost.addTab(
 				mTabHost.newTabSpec("city").setIndicator(res.getString(R.string.menu_main_city),
-						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentCity.class, null);
+						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentTabCity.class, null);
 		mTabHost.addTab(
 				mTabHost.newTabSpec("office").setIndicator(res.getString(R.string.menu_main_office),
-						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentCity.class, null);
+						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentTabOffice.class, null);
 		mTabHost.addTab(
 				mTabHost.newTabSpec("explore").setIndicator(res.getString(R.string.menu_main_explore),
-						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentCity.class, null);
+						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentTabExplore.class, null);
 		mTabHost.addTab(
 				mTabHost.newTabSpec("navigate").setIndicator(res.getString(R.string.menu_main_navigate),
-						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentCity.class, null);
+						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentTabNavigate.class, null);
 		mTabHost.addTab(
 				mTabHost.newTabSpec("settings").setIndicator(res.getString(R.string.menu_main_settings),
-						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentCity.class, null);
+						res.getDrawable(R.drawable.ic_menu_main_city)), FragmentTabSettings.class, null);
 
 		setTabIndicatorSize();
 		setTabIndicatorColors();
