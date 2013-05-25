@@ -7,17 +7,12 @@
     tools:context=".TabContents" >
 
     <ScrollView
-        android:id="@+id/scrollView1"
+        android:id="@+id/tabContentScroller"
         android:layout_width="match_parent"
         android:layout_height="0dip"
         android:layout_weight="0.81" >
 
-        <LinearLayout
-            android:id="@+id/scrollableTabContent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-        </LinearLayout>
+
     </ScrollView>
 
     <TextView

@@ -15,4 +15,9 @@ public class FragmentTabCity extends FragmentContentTab {
 	protected int getIdTextBottom() {
 		return R.string.menu_main_city;
 	}
+
+	@Override
+	protected int getIdTabLayout() {
+		return R.layout.view_tab_city;
+	}
 }

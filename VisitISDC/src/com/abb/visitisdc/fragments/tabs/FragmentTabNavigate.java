@@ -15,4 +15,9 @@ public class FragmentTabNavigate extends FragmentContentTab {
 	protected int getIdTextBottom() {
 		return R.string.menu_main_navigate;
 	}
+
+	@Override
+	protected int getIdTabLayout() {
+		return R.layout.view_tab_navigate;
+	}
 }

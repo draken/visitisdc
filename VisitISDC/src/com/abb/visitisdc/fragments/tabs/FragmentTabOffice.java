@@ -15,4 +15,9 @@ public class FragmentTabOffice extends FragmentContentTab {
 	protected int getIdTextBottom() {
 		return R.string.menu_main_office;
 	}
+
+	@Override
+	protected int getIdTabLayout() {
+		return R.layout.view_tab_office;
+	}
 }

@@ -24,7 +24,6 @@ public class MainActivity extends FragmentActivity {
 		setContentView(R.layout.activity_main);
 
 		createTabs();
-
 	}
 
 	private void createTabs() {
@@ -84,4 +83,17 @@ public class MainActivity extends FragmentActivity {
 		return true;
 	}
 
+	public void onClickAboutKrakow(View v) {
+		bkgFlicker(v);
+	}
+
+	private void bkgFlicker(View v) {
+		v.setBackgroundColor(getResources().getColor(android.R.color.background_light));
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		v.setBackgroundColor(getResources().getColor(android.R.color.background_dark));
+	}
 }

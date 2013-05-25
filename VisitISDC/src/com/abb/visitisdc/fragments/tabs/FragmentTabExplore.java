@@ -15,4 +15,9 @@ public class FragmentTabExplore extends FragmentContentTab {
 	protected int getIdTextBottom() {
 		return R.string.menu_main_explore;
 	}
+
+	@Override
+	protected int getIdTabLayout() {
+		return R.layout.view_tab_explore;
+	}
 }
