@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.abb.visitisdc.fragments.tabs;
+package com.abb.visitisdc.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -17,22 +17,22 @@ import com.abb.visitisdc.R;
  * @author marcin
  * 
  */
-public abstract class FragmentContentTab extends Fragment {
+public abstract class FragmentContentMain extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View tabContent = inflater.inflate(R.layout.fragment_content_tab, container, false);
+		View currentView = inflater.inflate(R.layout.fragment_content_main, container, false);
 
-		setupContentMiddle(inflater, tabContent);
+		setupContentMiddle(inflater, currentView);
 
-		setupTextBottom(tabContent);
+		setupTextBottom(currentView);
 
-		return tabContent;
+		return currentView;
 	}
 
 	private void setupContentMiddle(LayoutInflater inflater, View tabContent) {
-		ScrollView tabContentScroller = (ScrollView) tabContent.findViewById(R.id.tabContentScroller);
-		inflater.inflate(getIdTabLayout(), tabContentScroller);
+		ScrollView tabContentScroller = (ScrollView) tabContent.findViewById(R.id.mainContentScroller);
+		inflater.inflate(getIdMainLayout(), tabContentScroller);
 	}
 
 	private void setupTextBottom(View tabContent) {
@@ -40,7 +40,7 @@ public abstract class FragmentContentTab extends Fragment {
 		textBottom.setText(getResources().getString(getIdTextBottom()));
 	}
 
-	protected abstract int getIdTabLayout();
+	protected abstract int getIdMainLayout();
 
 	protected abstract int getIdTextBottom();
 }

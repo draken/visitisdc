@@ -1,5 +1,6 @@
-package com.abb.visitisdc;
+package com.abb.visitisdc.activities;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
+import com.abb.visitisdc.R;
+import com.abb.visitisdc.activities.pages.AboutKrakow;
 import com.abb.visitisdc.fragments.tabs.FragmentTabCity;
 import com.abb.visitisdc.fragments.tabs.FragmentTabExplore;
 import com.abb.visitisdc.fragments.tabs.FragmentTabNavigate;
@@ -84,16 +87,7 @@ public class MainActivity extends FragmentActivity {
 	}
 
 	public void onClickAboutKrakow(View v) {
-		bkgFlicker(v);
-	}
-
-	private void bkgFlicker(View v) {
-		v.setBackgroundColor(getResources().getColor(android.R.color.background_light));
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		v.setBackgroundColor(getResources().getColor(android.R.color.background_dark));
+		Intent intent = new Intent(v.getContext(), AboutKrakow.class);
+		startActivity(intent);
 	}
 }

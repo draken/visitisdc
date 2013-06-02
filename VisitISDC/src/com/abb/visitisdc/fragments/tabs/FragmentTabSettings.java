@@ -4,12 +4,13 @@
 package com.abb.visitisdc.fragments.tabs;
 
 import com.abb.visitisdc.R;
+import com.abb.visitisdc.fragments.FragmentContentMain;
 
 /**
  * @author marcin
  * 
  */
-public class FragmentTabSettings extends FragmentContentTab {
+public class FragmentTabSettings extends FragmentContentMain {
 
 	@Override
 	protected int getIdTextBottom() {
@@ -17,7 +18,7 @@ public class FragmentTabSettings extends FragmentContentTab {
 	}
 
 	@Override
-	protected int getIdTabLayout() {
+	protected int getIdMainLayout() {
 		return R.layout.view_tab_settings;
 	}
 }

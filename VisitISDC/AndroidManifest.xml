@@ -14,13 +14,18 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.abb.visitisdc.MainActivity"
-            android:label="@string/app_name" >
+            android:name="com.abb.visitisdc.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.abb.visitisdc.activities.pages.AboutKrakow"
+            android:label="@string/menu_main_city"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
