@@ -30,7 +30,7 @@ public abstract class FragmentContentMain extends Fragment {
 		return currentView;
 	}
 
-	private void setupContentMiddle(LayoutInflater inflater, View tabContent) {
+	protected void setupContentMiddle(LayoutInflater inflater, View tabContent) {
 		ScrollView tabContentScroller = (ScrollView) tabContent.findViewById(R.id.mainContentScroller);
 		inflater.inflate(getIdMainLayout(), tabContentScroller);
 	}
