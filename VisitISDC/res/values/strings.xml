@@ -13,4 +13,28 @@
     <string name="money">Money</string>
     <string name="language">Language</string>
     <string name="hotels">Hotels</string>
+    <string name="about_krakow_founded">Founded</string>
+    <string name="about_krakow_7th_century">7th century</string>
+    <string name="about_krakow_population">Population</string>
+    <string name="about_krakow_population_count">760 000</string>
+    <string name="about_krakow_universities">Universities</string>
+    <string name="about_krakow_universities_count">23</string>
+    <string name="about_krakow_capital">Former capital of Poland</string>
+    <string name="about_krakow_website">Krakow official website</string>
+    <string name="about_krakow_website_link">http://www.krakow.pl/english/</string>
+    <string name="about_krakow_other_companies">Other high tech companies:</string>
+    <string name="about_krakow_other_companies_akamai">Akamai</string>
+    <string name="about_krakow_other_companies_cisco">Cisco</string>
+    <string name="about_krakow_other_companies_google">Google</string>
+    <string name="about_krakow_other_companies_ibm">IBM</string>
+    <string name="about_krakow_other_companies_infusion">Infusion</string>
+    <string name="about_krakow_other_companies_motorola">Motorola</string>
+    <string name="about_krakow_other_companies_oracle">Oracle</string>
+    <string name="about_krakow_other_companies_sabre">Sabre</string>
+    <string name="about_krakow_description">Kraków (also Cracow or Krakow) is the second 
+        largest and one of the oldest cities in Poland. Situated on the Vistula River
+        in the Lesser Poland region, the city dates back to 7th century. Kraków has
+        traditionally been one of the leading centres of Polish academic, cultural and
+        artistic life and is one of Poland\'s most important economic hubs. Kraków is also 
+        famous for its myriad restaurants and nightspots.</string>
 </resources>

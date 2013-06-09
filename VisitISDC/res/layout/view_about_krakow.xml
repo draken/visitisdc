@@ -1,18 +1,301 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AboutKrakow" >
     
     <us.feras.ecogallery.EcoGallery
-    android:id="@+id/images_about_krakow"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+        android:id="@+id/images_about_krakow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_spacing">
+    </View>
 
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_cell_with_border_background_not_clicked" >
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/vertical_padding_standard"
+            android:paddingBottom="@dimen/vertical_padding_standard"
+            android:background="@drawable/table_cell_with_border_background_not_clicked" >
+            
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:contentDescription="@string/about_krakow_founded"
+                android:src="@drawable/ic_star" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.35"
+                android:text="@string/about_krakow_founded" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/about_krakow_7th_century"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/vertical_padding_standard"
+            android:paddingBottom="@dimen/vertical_padding_standard"
+            android:background="@drawable/table_cell_with_border_background_not_clicked" >
+            
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:contentDescription="@string/about_krakow_population"
+                android:src="@drawable/ic_population" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.35"
+                android:text="@string/about_krakow_population" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/about_krakow_population_count"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/vertical_padding_standard"
+            android:paddingBottom="@dimen/vertical_padding_standard"
+            android:background="@drawable/table_cell_with_border_background_not_clicked" >
+            
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:contentDescription="@string/about_krakow_universities"
+                android:src="@drawable/ic_universities" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.35"
+                android:text="@string/about_krakow_universities" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/about_krakow_universities_count"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/vertical_padding_standard"
+            android:paddingBottom="@dimen/vertical_padding_standard"
+            android:background="@drawable/table_cell_with_border_background_not_clicked" >
+            
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:contentDescription="@string/about_krakow_universities"
+                android:src="@drawable/ic_crown" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.85"
+                android:layout_span="2"
+                android:text="@string/about_krakow_capital" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/vertical_padding_standard"
+            android:paddingBottom="@dimen/vertical_padding_standard"
+            android:background="@drawable/table_cell_with_border_clickable_background"
+            android:clickable="true"
+            android:onClick="onClickGoToKrakowWebsite" >
+            
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:contentDescription="@string/about_krakow_website"
+                android:src="@drawable/ic_earth" />
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="0.85"
+                android:layout_span="2"
+                android:text="@string/about_krakow_website"
+                android:drawableRight="@drawable/ic_arrow_right" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/vertical_padding_standard"
+            android:paddingBottom="@dimen/vertical_padding_standard"
+            android:paddingLeft="5dp"
+            android:background="@drawable/table_cell_with_border_background_not_clicked" >
+            
+            <TextView 
+                android:layout_gravity="left|center_vertical"
+                android:layout_span="3"
+                android:text="@string/about_krakow_other_companies" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_cell_with_border_background_not_clicked" >
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_span="3"
+                android:orientation="vertical"
+                android:background="@drawable/table_cell_with_border_background_not_clicked" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell_with_border_background_not_clicked" >
+                    
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_akamai"
+                        android:drawableLeft="@drawable/im_logo_akamai"
+                        android:drawablePadding="5dp" />
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_cisco"
+                        android:drawableLeft="@drawable/im_logo_cisco"
+                        android:drawablePadding="5dp" />
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell_with_border_background_not_clicked" >
+                    
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_google"
+                        android:drawableLeft="@drawable/im_logo_google"
+                        android:drawablePadding="5dp" />
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_ibm"
+                        android:drawableLeft="@drawable/im_logo_ibm"
+                        android:drawablePadding="5dp" />
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell_with_border_background_not_clicked" >
+                    
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_infusion"
+                        android:drawableLeft="@drawable/im_logo_infusion"
+                        android:drawablePadding="5dp" />
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_motorola"
+                        android:drawableLeft="@drawable/im_logo_motorola"
+                        android:drawablePadding="5dp" />
+                </TableRow>
+                    
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_cell_with_border_background_not_clicked" >
+                    
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_oracle"
+                        android:drawableLeft="@drawable/im_logo_oracle"
+                        android:drawablePadding="5dp" />
+                    <TextView 
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:paddingTop="@dimen/vertical_padding_small"
+                        android:paddingBottom="@dimen/vertical_padding_small"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/table_cell_with_border_background_not_clicked"
+                        android:textStyle="bold"
+                        android:text="@string/about_krakow_other_companies_sabre"
+                        android:drawableLeft="@drawable/im_logo_sabre"
+                        android:drawablePadding="5dp" />
+                </TableRow>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_vertical_spacing">
+    </View>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/vertical_padding_standard"
+        android:paddingBottom="@dimen/vertical_padding_standard"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/table_cell_with_border_background_not_clicked"
+        android:text="@string/about_krakow_description" />
 </LinearLayout>
