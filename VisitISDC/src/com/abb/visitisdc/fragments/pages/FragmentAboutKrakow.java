@@ -40,10 +40,10 @@ public class FragmentAboutKrakow extends FragmentContentMain {
 		EcoGallery gallery = (EcoGallery) tabContent.findViewById(R.id.images_about_krakow);
 		Resources resources = getResources();
 		GallerySpinnerAdapter adapter = new GallerySpinnerAdapter(gallery.getContext(),
-				resources.getDrawable(R.drawable.im_city0), resources.getDrawable(R.drawable.im_city1),
-				resources.getDrawable(R.drawable.im_city2), resources.getDrawable(R.drawable.im_city3),
-				resources.getDrawable(R.drawable.im_city4), resources.getDrawable(R.drawable.im_city5),
-				resources.getDrawable(R.drawable.im_city6));
+				resources.getDrawable(R.drawable.im_about_krakow0), resources.getDrawable(R.drawable.im_about_krakow1),
+				resources.getDrawable(R.drawable.im_about_krakow2), resources.getDrawable(R.drawable.im_about_krakow3),
+				resources.getDrawable(R.drawable.im_about_krakow4), resources.getDrawable(R.drawable.im_about_krakow5),
+				resources.getDrawable(R.drawable.im_about_krakow6));
 		gallery.setAdapter(adapter);
 	}
 

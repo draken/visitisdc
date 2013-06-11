@@ -35,7 +35,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="0.15"
                 android:contentDescription="@string/about_krakow_founded"
-                android:src="@drawable/ic_star" />
+                android:src="@drawable/ic_about_krakow_star" />
             <TextView 
                 android:layout_gravity="left|center_vertical"
                 android:layout_weight="0.35"
@@ -59,7 +59,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="0.15"
                 android:contentDescription="@string/about_krakow_population"
-                android:src="@drawable/ic_population" />
+                android:src="@drawable/ic_about_krakow_population" />
             <TextView 
                 android:layout_gravity="left|center_vertical"
                 android:layout_weight="0.35"
@@ -83,7 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="0.15"
                 android:contentDescription="@string/about_krakow_universities"
-                android:src="@drawable/ic_universities" />
+                android:src="@drawable/ic_about_krakow_universities" />
             <TextView 
                 android:layout_gravity="left|center_vertical"
                 android:layout_weight="0.35"
@@ -107,7 +107,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="0.15"
                 android:contentDescription="@string/about_krakow_universities"
-                android:src="@drawable/ic_crown" />
+                android:src="@drawable/ic_about_krakow_crown" />
             <TextView 
                 android:layout_gravity="left|center_vertical"
                 android:layout_weight="0.85"
@@ -128,7 +128,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="0.15"
                 android:contentDescription="@string/about_krakow_website"
-                android:src="@drawable/ic_earth" />
+                android:src="@drawable/ic_about_krakow_earth" />
             <TextView 
                 android:layout_gravity="left|center_vertical"
                 android:layout_weight="0.85"
@@ -179,8 +179,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_akamai"
-                        android:drawableLeft="@drawable/im_logo_akamai"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_akamai"
+                        android:drawablePadding="10dp" />
                     <TextView 
                         android:layout_gravity="center"
                         android:layout_weight="0.5"
@@ -190,8 +190,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_cisco"
-                        android:drawableLeft="@drawable/im_logo_cisco"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_cisco"
+                        android:drawablePadding="10dp" />
                 </TableRow>
                 
                 <TableRow
@@ -208,8 +208,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_google"
-                        android:drawableLeft="@drawable/im_logo_google"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_google"
+                        android:drawablePadding="10dp" />
                     <TextView 
                         android:layout_gravity="center"
                         android:layout_weight="0.5"
@@ -219,8 +219,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_ibm"
-                        android:drawableLeft="@drawable/im_logo_ibm"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_ibm"
+                        android:drawablePadding="10dp" />
                 </TableRow>
                 
                 <TableRow
@@ -237,8 +237,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_infusion"
-                        android:drawableLeft="@drawable/im_logo_infusion"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_infusion"
+                        android:drawablePadding="10dp" />
                     <TextView 
                         android:layout_gravity="center"
                         android:layout_weight="0.5"
@@ -248,8 +248,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_motorola"
-                        android:drawableLeft="@drawable/im_logo_motorola"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_motorola"
+                        android:drawablePadding="10dp" />
                 </TableRow>
                     
                 <TableRow
@@ -266,8 +266,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_oracle"
-                        android:drawableLeft="@drawable/im_logo_oracle"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_oracle"
+                        android:drawablePadding="10dp" />
                     <TextView 
                         android:layout_gravity="center"
                         android:layout_weight="0.5"
@@ -277,8 +277,8 @@
                         android:background="@drawable/table_cell_with_border_background_not_clicked"
                         android:textStyle="bold"
                         android:text="@string/about_krakow_other_companies_sabre"
-                        android:drawableLeft="@drawable/im_logo_sabre"
-                        android:drawablePadding="5dp" />
+                        android:drawableLeft="@drawable/im_about_krakow_logo_sabre"
+                        android:drawablePadding="10dp" />
                 </TableRow>
             </LinearLayout>
         </TableRow>
