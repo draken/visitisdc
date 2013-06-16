@@ -3,6 +3,7 @@
  */
 package com.abb.visitisdc.fragments.pages;
 
+import pl.mnowrot.ecogalleryindicator.EcoGalleryIndicator;
 import us.feras.ecogallery.EcoGallery;
 import android.content.res.Resources;
 import android.view.LayoutInflater;
@@ -45,6 +46,10 @@ public class FragmentAboutKrakow extends FragmentContentMain {
 				resources.getDrawable(R.drawable.im_about_krakow4), resources.getDrawable(R.drawable.im_about_krakow5),
 				resources.getDrawable(R.drawable.im_about_krakow6));
 		gallery.setAdapter(adapter);
+
+		EcoGalleryIndicator galleryIndicator = (EcoGalleryIndicator) tabContent
+				.findViewById(R.id.images_about_krakow_indicator);
+		galleryIndicator.setEcoGallery(gallery);
 	}
 
 	/*

@@ -9,12 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AboutKrakow" xmlns:app="http://schemas.android.com/apk/res/com.abb.visitisdc">
     
-    <us.feras.ecogallery.EcoGallery
-        android:id="@+id/images_about_krakow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        app:unselectedAlpha="1" />
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <us.feras.ecogallery.EcoGallery
+            android:id="@+id/images_about_krakow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:unselectedAlpha="1" />
+
+        <pl.mnowrot.ecogalleryindicator.EcoGalleryIndicator
+            android:id="@+id/images_about_krakow_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/vertical_padding_standard"
+            android:layout_gravity="center" />
+    </LinearLayout>
     
     <View
         android:layout_width="match_parent"
