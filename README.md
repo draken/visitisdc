@@ -1,4 +1,4 @@
-visitisdc
+visit
 =========
 
-Visit ISDC application
+Visit application
